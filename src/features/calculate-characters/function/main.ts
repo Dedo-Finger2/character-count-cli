@@ -2,6 +2,10 @@ import { removeDashFromFlags } from "./../../../utils/remove-dash-from-flags.ts"
 import { splitInputFromFlags } from "./../../../utils/split-input-from-flags.ts";
 
 export function calculateCharacteres(args: string[]) {
+  if (args.length === 0) {
+    throw new Error("Text cannot be empty.");
+  }
+
   let { input, flags } = splitInputFromFlags(args);
 
   if (input === null || input.length === 0) {

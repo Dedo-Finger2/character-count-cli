@@ -1,5 +1,5 @@
 export function removeDashFromFlags(flags: string[]): string[] {
-  if (flags.length === 0) {
+  if (flags !== null && flags.length === 0) {
     throw new Error("Cannot remove dashes from empty flags.");
   }
 
