@@ -12,5 +12,7 @@ export function calculateCharacteres(args: string[]) {
     input = input.replaceAll(" ", "");
   }
 
-  return "Characters Long: " + input?.trim().length;
+  const charactersLong = input.trim().length;
+
+  return "Characters Long: " + charactersLong;
 }

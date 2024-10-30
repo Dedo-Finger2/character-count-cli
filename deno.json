@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run src/cli/character-count/main.ts",
+    "dev": "deno run --allow-run src/cli/character-count/main.ts",
     "test": "deno test --allow-run",
     "build-linux": "deno compile -o ./bin/character-count-linux --check -A --target x86_64-unknown-linux-gnu src/cli/character-count/main.ts",
     "build-windows": "deno compile -o ./bin/character-count-win --check -A --target x86_64-pc-windows-msvc src/cli/character-count/main.ts",

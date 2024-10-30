@@ -1,3 +1,5 @@
 import { calculateCharacteres } from "./../../features/calculate-characters/function/main.ts";
 
-console.log(calculateCharacteres(Deno.args));
+const response = calculateCharacteres(Deno.args);
+
+console.log(response);
